@@ -1,0 +1,257 @@
+@font-face {
+    font-family: CuteFont;
+  src: url(Dosis-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: CuteFont;
+    background-color: #F7EDE2;
+    margin: 0;
+    text-align: center;
+}
+
+.button {
+    background-color: #F6BD60;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.438);
+  }
+
+.title {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #84A59D;
+}
+/* Navbar */
+.topnav {
+    position: sticky;
+    top: 0;
+    background-color: #F5CAC3 !important;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .topnav a {
+    font-weight: 700;
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #f5b2a7a4;
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color: #F28482;
+    color: white;
+  }
+
+  #Name {
+    font-weight: 800;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* About Me Section */
+.aboutme {
+    text-align: center;
+}
+
+    #headshot img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.815);
+        
+    }
+
+    #introduction {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+/* Experience Section */
+.experience {
+    text-align: center;
+}
+
+/* Container for the row */
+.row {
+    display: flex; /* Enables horizontal layout */
+    justify-content: space-between; /* Space between the boxes */
+    gap: 0px; /* Adds space between the columns (boxes) */
+    padding: 0 20px; /* Adds padding to the left and right of the row */
+}
+
+/* Each column (box container) */
+.column {
+    width: 49%; /* Adjust the width of each column */
+}
+
+/* Style for the experience box */
+.experience-box {
+    border: 2px solid #d8d0c7; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    background-color: #F7EDE2; /* Background color for the box */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Light shadow for 3D effect */
+    height: 100%; /* Ensure the box takes full height of the column */
+}
+
+/* Logos */
+#arblogo img {
+    width: auto;
+    height: 50px; /* Adjust the size of the logos */
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#pegasuslogo img {
+    width: auto;
+    height: 50px; /* Adjust the size of the logos */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Title, Subtitle, Content */
+.ex_title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.ex_subtitle {
+    font-size: 20px;
+    color: #3d3d3d;
+    margin-bottom: 8px;
+}
+
+.ex_content {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Button styles */
+.button {
+    background-color: #F5CAC3;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    align-self: flex-end; /* Align button to the bottom of the container */
+}
+
+.button:hover {
+    background-color: #F28482;
+}
+
+    /* Portfolio Section */
+    a {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Inherits color from parent */
+    }
+
+    .box {
+        text-decoration: none;
+        color: black;
+        border-radius: 25px;
+        background: #F6BD60;
+        margin: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 800px;
+        height: auto; /* Allow for text content to determine height */
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border-color: #d6a454;
+        border-style: solid;
+        display: flex; /* Create a horizontal layout */
+        justify-content: space-between; /* Space out text and image */
+        align-items: center; /* Vertically center text and image */
+    }
+    
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+    
+    .box img {
+        width: auto;
+        height: 125px;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        left: -15px;
+    }
+    
+    .box img:hover {
+        top: -5px;
+    }
+
+    #port_title {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    #port_subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    #port_desc {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+/* Contact Me Section */
+.icon-container {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center; /* Aligns the icons vertically */
+    gap: 100px; /* Space between the icons */
+    margin: 20px; /* Optional margin around the container */
+}
+
+.icon i {
+    font-size: 50px; /* Set the size of the icons (adjust as needed) */
+    color: #333; /* Set the icon color */
+    transition: transform 0.3s ease; /* Optional: adds a hover effect */
+}
+
+/* Optional: hover effect */
+.icon i:hover {
+    transform: scale(1.2); /* Slightly increase the size on hover */
+}
