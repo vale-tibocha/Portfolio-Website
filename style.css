@@ -40,10 +40,12 @@ body {
     font-weight: 700;
     color: #84A59D;
 }
+
 /* Navbar */
 .topnav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     overflow: hidden;
     background-color: #F5CAC3;
     z-index: 99;
@@ -81,6 +83,7 @@ body {
 /* About Me Section */
     .aboutme {
         text-align: center;
+        margin-top: 70px;
     }
 
     .headshot-container {
