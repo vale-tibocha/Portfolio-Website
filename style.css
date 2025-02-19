@@ -3,6 +3,11 @@
   src: url(Dosis-VariableFont_wght.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 body {
     font-family: CuteFont;
     background-color: #F7EDE2;
@@ -11,7 +16,7 @@ body {
 }
 
 .button {
-    background-color: #F6BD60;
+    background-color: #F5CAC3;
     border: none;
     border-radius: 20px;
     color: white;
@@ -22,7 +27,12 @@ body {
     font-size: 20px;
     font-weight: 600;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.438);
+    align-self: flex-end; 
   }
+
+  .button:hover {
+    background-color: #F28482;
+}
 
 .title {
     margin-top: 20px;
@@ -31,43 +41,43 @@ body {
     color: #84A59D;
 }
 /* Navbar */
-    .topnav {
-        position: sticky;
-        top: 0;
-        background-color: #F5CAC3 !important;
-        overflow: hidden;
-        z-index: 1;
-    }
+.topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #F5CAC3;
+    z-index: 99;
 
-    .topnav a {
-        font-weight: 700;
-        float: right;
-        color: #ffffff;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .topnav a:hover {
-        background-color: #f5b2a7a4;
-        color: white;
-    }
-    
-    .topnav a.active {
-        background-color: #F28482;
-        color: white;
-    }
+  }
 
-    #Name {
-        font-weight: 800;
-        float: left;
-        color: #ffffff;
-        text-align: center;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-size: 20px;
-    }
+  .topnav #links {
+    display: none;
+  }
+  
+  .topnav a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    z-index: 99;
+  }
+  
+  .topnav a.bar {
+    background: #F5CAC3;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  
+  .active {
+    background-color: #F5CAC3;
+    color: white;
+  }
+
 /* About Me Section */
     .aboutme {
         text-align: center;
@@ -176,19 +186,6 @@ body {
         margin-right: 20px;
     }
 
-    .button {
-        background-color: #F5CAC3;
-        color: #fff;
-        padding: 5px 20px;
-        border-radius: 20px;
-        text-decoration: none;
-        align-self: flex-end; 
-    }
-
-    .button:hover {
-        background-color: #F28482;
-    }
-
 /* Portfolio Section */
     a {
         text-decoration: none; 
@@ -273,4 +270,136 @@ body {
 
     .icon i:hover {
         transform: scale(1.2); 
+    }
+
+@media (max-width: 768px) {
+    
+        .headshot-container {
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 0px;
+        }
+    
+        .gif-left, .gif-right {
+            display: inline-block;
+            height: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .gif-left img,
+        .gif-right img {
+            width: 70px;  
+            height: auto; 
+            object-fit: contain; 
+        }
+    
+        #headshot img {
+            width: 150px; 
+            height: auto;
+        }
+    
+        #introduction {
+            font-size: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+/* Experience Section */
+        .row {
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+        }
+    
+        .column {
+            width: 100%;
+        }
+    
+        .experience-box {
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 8%;
+        }
+
+/* Title, Subtitle, Content */
+            .ex_title {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            .ex_subtitle {
+                font-size: 16px;
+                color: #3d3d3d;
+                margin-bottom: 8px;
+            }
+
+            .ex_content {
+                font-size: 14px;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+        .button {
+            margin-bottom: 10px;
+        }
+        
+
+/* Portfolio Section */
+        .box {
+            display: flex;
+            flex-direction: column; 
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+    
+        .text-container {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+        }
+    
+        .box img {
+            width: 50%; 
+            max-width: 200px;
+            height: auto;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+    
+        #port_title {
+            font-size: 20px;
+        }
+    
+        #port_subtitle {
+            font-size: 18px;
+        }
+    
+        #port_desc {
+            font-size: 16px;
+        }
+
+/* Contact Me */
+        .icon-container {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 50px; 
+            margin: 20px; 
+        }
+    
+        .icon i {
+            font-size: 50px; 
+            color: #333; 
+            transition: transform 0.3s ease; 
+        }
+
     }
