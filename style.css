@@ -335,7 +335,19 @@ body {
             width: 80%;
             margin: 0 auto;
             border-radius: 8%;
+            position: relative;
+            justify-content: space-between;
+            min-height: 400px;
+            margin-bottom: 15px;
         }
+
+        .experience-box a {
+            position: absolute; 
+            bottom: 10px; 
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+        
 
 /* Title, Subtitle, Content */
             .ex_title {
