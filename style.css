@@ -152,6 +152,10 @@ body {
         padding: 10px; 
         background-color: #F7EDE2; 
         height: 100%;
+        position: relative;
+        justify-content: space-between;
+        min-height: 300px;
+        margin-bottom: 15px;
     }
 
     /* Logos */
@@ -187,6 +191,13 @@ body {
         margin-bottom: 15px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .experience-box a {
+        position: absolute; 
+        bottom: 10px; 
+        left: 50%; 
+        transform: translateX(-50%);
     }
 
 /* Portfolio Section */
