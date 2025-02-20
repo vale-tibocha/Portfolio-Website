@@ -137,7 +137,7 @@ body {
     .row {
         display: flex; 
         justify-content: space-evenly; 
-        gap: 0px; 
+        gap: -10px; 
         padding: 0 50px; 
     }
 
