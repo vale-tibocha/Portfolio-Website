@@ -138,7 +138,7 @@ body {
         display: flex; 
         justify-content: space-evenly; 
         gap: 0px; 
-        padding: 0 0px; 
+        padding: 0 50px; 
     }
 
     
