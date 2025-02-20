@@ -426,7 +426,8 @@ body {
         }
     
         .icon i {
-            font-size: 50px; 
+            font-size: 50px;
+            color: #F28482; 
             transition: transform 0.3s ease; 
         }
 
