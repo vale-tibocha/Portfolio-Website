@@ -13,6 +13,7 @@ body {
     background-color: #F7EDE2;
     margin: 0;
     text-align: center;
+    line-height: 1.5
 }
 
 .button {
@@ -77,6 +78,16 @@ body {
   
   .active {
     background-color: #F5CAC3;
+    color: white;
+  }
+
+  .active:hover {
+    background-color: #F5CAC3;
+    color: white;
+  }
+
+  .hover a:hover {
+    background-color: #F28482;
     color: white;
   }
 
@@ -435,4 +446,7 @@ body {
             transition: transform 0.3s ease; 
         }
 
+        .icon-container p {
+            font-weight: 700;
+        }
     }
