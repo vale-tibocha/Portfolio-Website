@@ -13,10 +13,10 @@
     <meta name="preview" property="og:image" content="https://valeriatibocha.com/assets/preview.jpg">
 </head>
 <link rel="stylesheet" href="style.css">
-<body>
+<body id="home">
 <!--Navigation Bar-->
 <div class="topnav">
-    <a href="#aboutme" class="active">Valeria Tibocha-Florez</a>
+    <a href="#home" class="active">Valeria Tibocha-Florez</a>
     <div id="links" class="hover">
       <a href="#aboutme" onclick="myFunction()">About Me</a>
       <a href="#experience" onclick="myFunction()">Experience</a>
@@ -27,7 +27,7 @@
         <i class="fa-solid fa-bars"></i>
     </a>
   </div>
-  
+<div onclick="closer()">
 <!-- About Me Secion -->
     <div class="aboutme">
         <div class="title" id="aboutme">
@@ -76,7 +76,7 @@
                             UCF Arboretum LxL Internship
                         </div>
                         <div class="ex_subtitle">
-                            Website and Microsoft Teams Management | Spring 2025 – Present
+                            Website and Microsoft Teams Intern | Spring 2025 – Present
                         </div>
                         <div class="ex_content">
                             In this role, I have focused on maintaining the UCF Arboretum 
@@ -105,10 +105,10 @@
                     Pegasus Promotions
                 </div>
                 <div class="ex_subtitle">
-                    Graphic Designer | Fall 2024 – January 2025
+                    Graphic Designer | Fall 2024
                 </div>
                 <div class="ex_subtitle">
-                    Content Creator | January 2025 – Present
+                    Content Creator | Spring 2025 – Present
                 </div>
                 <div class="ex_content">
                     Pegasus Promotions is a marketing agency that works with local 
@@ -120,8 +120,8 @@
                     website page.
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/pegasus_promotions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="button">
-                        Instagram
+                    <a href="pegasus.html" target="_self" rel="noopener noreferrer" class="button">
+                        My Designs
                     </a>
                 </div>
             </div>
@@ -213,17 +213,22 @@
         <br>
         <br>
         <br>
+</div>
        
-        <script>
-            function myFunction() {
+<script>
+    function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+            function closer() {
   var x = document.getElementById("links");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-        </script>
+  x.style.display = "none";
+            }
+</script>
 <script src="https://kit.fontawesome.com/f43a9f8d04.js" crossorigin="anonymous"></script>
 </body>
 </html>
