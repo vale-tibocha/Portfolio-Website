@@ -17,7 +17,7 @@ body {
 }
 
 .button {
-    background-color: #F5CAC3;
+    background-color: #F28482;
     border: none;
     border-radius: 20px;
     color: white;
@@ -32,7 +32,7 @@ body {
   }
 
   .button:hover {
-    background-color: #F28482;
+    background-color: #c36d6b;
 }
 
 .title {
@@ -48,7 +48,7 @@ body {
     top: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #F5CAC3;
+    background-color: #F28482;
     z-index: 99;
 
   }
@@ -68,7 +68,7 @@ body {
   }
   
   .topnav a.bar {
-    background: #F5CAC3;
+    background: #F28482;
     display: block;
     position: absolute;
     right: 0;
@@ -77,17 +77,17 @@ body {
   }
   
   .active {
-    background-color: #F5CAC3;
+    background-color: #F28482;
     color: white;
   }
 
   .active:hover {
-    background-color: #F5CAC3;
+    background-color: #F28482;
     color: white;
   }
 
   .hover a:hover {
-    background-color: #F28482;
+    background-color: #c36d6b;
     color: white;
   }
 
@@ -297,6 +297,16 @@ body {
         transition: transform 0.3s ease; 
     }
 
+/*    .icon img {
+        width: 50px;
+        height: auto;
+        transition: transform 0.3s ease; 
+    }
+
+    .icon img:hover {
+        transform: scale(1.2); 
+    }
+*/
     .icon i:hover {
         transform: scale(1.2); 
     }
@@ -454,8 +464,12 @@ body {
         }
 
 /* Pegasus Promotions Page */
+    .desktop {
+        display: none;
+        }
+
     .mobile {
-        background-color: #F5CAC3;
+        background-color: #F28482;
         border: none;
         border-radius: 20px;
         color: white;
@@ -470,3 +484,5 @@ body {
         }   
 
     }
+
+
